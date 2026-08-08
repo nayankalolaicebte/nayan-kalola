@@ -5,10 +5,10 @@
 ### 🐍 Python Backend Developer | Django & DRF | Redis & Celery | AWS & Docker
 
 <p>
-  <a href="https://github.com/YOUR_USERNAME">
+  <a href="https://github.com/nayankalolaicebte">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/">
+  <a href="https://www.linkedin.com/in/nayan-kalola-7b725118b/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="https://nayankalola.in">
@@ -185,9 +185,11 @@ REST API services supporting authentication, business workflows, notifications, 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=tokyonight" alt="GitHub Stats"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nayankalolaicebte
+&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=tokyonight" alt="GitHub Stats"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top Languages"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nayankalolaicebte
+&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top Languages"/>
 
 </div>
 
@@ -195,7 +197,8 @@ REST API services supporting authentication, business workflows, notifications, 
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=nayankalolaicebte
+&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 
 </div>
 
@@ -206,7 +209,7 @@ REST API services supporting authentication, business workflows, notifications, 
 <div align="center">
 
 <!-- The snake animation requires the GitHub Action below to generate the SVG. -->
-<img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake"/>
+<img src="https://raw.githubusercontent.com/nayankalolaicebte/nayankalolaicebte/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake"/>
 
 </div>
 
@@ -297,7 +300,7 @@ I'm interested in:
   <img src="https://img.shields.io/badge/🌐%20Portfolio-nayankalola.in-111111?style=for-the-badge" alt="Portfolio"/>
 </a>
 
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/">
+<a href="https://www.linkedin.com/in/nayan-kalola-7b725118b/">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 
@@ -309,6 +312,6 @@ I'm interested in:
 
 ### 💻 Code. Build. Optimize. Repeat.
 
-<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=nayankalolaicebte&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views"/>
 
 </div>
