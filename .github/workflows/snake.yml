@@ -1,29 +1,66 @@
-name: Generate Snake
+name: Generate GitHub Contribution Snake
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-      - name: Generate GitHub contribution snake
-        uses: Platane/snk@v3
+      - name: Checkout repository
+        uses: actions/checkout@v5
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          fetch-depth: 0
 
-      - name: Push snake animation
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
         with:
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: nayankalolaicebte
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish snake to output branch
+        shell: bash
+        run: |
+          set -e
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p /tmp/snake-output
+          cp dist/github-snake.svg /tmp/snake-output/
+          cp dist/github-snake-dark.svg /tmp/snake-output/
+
+          if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
+            git fetch origin output
+            git worktree add /tmp/output-branch origin/output
+          else
+            git worktree add --detach /tmp/output-branch
+            cd /tmp/output-branch
+            git switch --orphan output
+            git rm -rf . || true
+          fi
+
+          rm -rf /tmp/output-branch/*
+          
+          cp /tmp/snake-output/github-snake.svg /tmp/output-branch/
+          cp /tmp/snake-output/github-snake-dark.svg /tmp/output-branch/
+
+          cd /tmp/output-branch
+
+          git add github-snake.svg github-snake-dark.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+
+          git commit -m "Update contribution snake"
+          git push origin HEAD:output
