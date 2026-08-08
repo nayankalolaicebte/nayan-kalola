@@ -187,7 +187,7 @@ REST API services supporting authentication, business workflows, notifications, 
 <a href="https://github.com/nayankalolaicebte">
 
 <img
-  src="https://raw.githubusercontent.com/nayankalolaicebte/nayankalolaicebte/output/github-snake.svg"
+  src="https://github-readme-streak-stats.herokuapp.com/?user=nayankalolaicebte&theme=tokyonight&hide_border=true"
   alt="GitHub Contribution Snake"
   width="100%"
 />
